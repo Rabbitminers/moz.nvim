@@ -23,7 +23,7 @@ function M.setup(config, colors)
 		end
 	end
 
-	for hl, spec in pairs(config.highlight_overrides(colors)) do
+	for hl, spec in pairs(config.highlight_overrides(colors) or {}) do
 		if highlights[hl] and next(spec) then
 			highlights[hl].link = nil
 		end

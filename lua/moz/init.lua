@@ -3,8 +3,9 @@ local M = {}
 ---@class MozConfig
 M.config = {
 	color_overrides = {},
-	highlight_overrides = {},
-	custom_highlights = {},
+	custom_highlights = function()
+		return {}
+	end,
 	integrations = {
 		alpha = false,
 		cmp = false,

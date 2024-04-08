@@ -3,7 +3,6 @@
 ---@class MozOptions
 ---@field color_overrides MozColors?
 ---@field highlight_overrides MozHighlightOverrides?
----@field custom_highlights MozHighlightOverrides | { [string]: MozHighlight } | nil
 ---@field integrations MozIntegrations?
 ---@field transparent_background boolean?
 ---@field dim_inactive boolean?
